@@ -71,7 +71,7 @@ def find_favorite(array_of_hash_objects)
 
   ans = array_of_hash_objects.select{|hash| hash[:is_my_favorite?] == true}
   ans.empty? ? nil : ans[0]
-
+ 
   # array_of_hash_objects.each_with_index do |hash, index|
   #   if hash.has_key?(:is_my_favorite?)
   #     if hash[:is_my_favorite?]==true
